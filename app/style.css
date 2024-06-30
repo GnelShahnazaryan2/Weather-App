@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    }
+    
+    .main {
+    background: linear-gradient(113.19deg, #B4EDFF -1.46%, rgba(30, 148, 226, 0.54) 107.81%);
+    width: 100%;
+    min-height: 100vh;
+    padding: 32px;
+    }
+    
+    .toggle-wrapper {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    }
+    
+    .toggle-wrapper .toggle-inner {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #006DAA;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    }
+    
+    .theme-toggle p {
+    margin-top: 8px;
+    font-weight: 800;
+    font-size: 16px;
+    
+    }
+
+
+    .theme-toggle{
+        width:200px;
+    }
+    
+
+
+.search-bar{
+    width: 100%;
+    height: 62px;
+    background-color: white;
+    border: 1px solid #000;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 32px;
+    gap:40px;    
+}    
+
+
+.search-bar input{
+    flex: 1;
+    border: none;
+
+}
+
+.search-bar button{
+    background: none;
+    border: none;
+}
+
+.celsius-toggle{
+    width: 180px;
+    height: 62px;
+    border-radius: 40px;
+    background-color: white;
+    display:flex; 
+    padding: 4px 18px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.celsius-toggle button{
+    background: none;
+    border: none;
+    width: 60px;
+    height: 60px;
+    color:#536878;
+    font-weight:600;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.celsius-toggle .active{
+    font-size: 40px;
+    color: black;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+
+.conteiner{
+    width: 100%;
+    display: flex;
+    gap: 28px;
+}
