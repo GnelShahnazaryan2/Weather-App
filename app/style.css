@@ -2,21 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    }
-    
-    body {
+}
+
+body {
     width: 100%;
     font-family: "Poppins", sans-serif;
-    }
-    
-    .main {
+}
+
+.main {
     background: linear-gradient(113.19deg, #B4EDFF -1.46%, rgba(30, 148, 226, 0.54) 107.81%);
     width: 100%;
     min-height: 100vh;
     padding: 32px;
-    }
-    
-    .toggle-wrapper {
+}
+
+.toggle-wrapper {
     position: relative;
     width: 70px;
     height: 30px;
@@ -24,9 +24,9 @@
     border: 1px solid #000;
     border-radius: 50px;
     cursor: pointer;
-    }
-    
-    .toggle-wrapper .toggle-inner {
+}
+
+.toggle-wrapper .toggle-inner {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -35,23 +35,23 @@
     top: 50%;
     transform: translateY(-50%);
     left: 5px;
-    }
-    
-    .theme-toggle p {
+}
+
+.theme-toggle p {
     margin-top: 8px;
     font-weight: 800;
     font-size: 16px;
-    
-    }
+
+}
 
 
-    .theme-toggle{
-        width:200px;
-    }
-    
+.theme-toggle {
+    width: 200px;
+}
 
 
-.search-bar{
+
+.search-bar {
     width: 100%;
     height: 62px;
     background-color: white;
@@ -60,27 +60,27 @@
     display: flex;
     justify-content: space-between;
     padding: 4px 32px;
-    gap:40px;    
-}    
+    gap: 40px;
+}
 
 
-.search-bar input{
+.search-bar input {
     flex: 1;
     border: none;
 
 }
 
-.search-bar button{
+.search-bar button {
     background: none;
     border: none;
 }
 
-.celsius-toggle{
+.celsius-toggle {
     width: 180px;
     height: 62px;
     border-radius: 40px;
     background-color: white;
-    display:flex; 
+    display: flex;
     padding: 4px 18px;
     justify-content: center;
     align-items: center;
@@ -88,13 +88,13 @@
 
 }
 
-.celsius-toggle button{
+.celsius-toggle button {
     background: none;
     border: none;
     width: 60px;
     height: 60px;
-    color:#536878;
-    font-weight:600;
+    color: #536878;
+    font-weight: 600;
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -102,12 +102,12 @@
 
 }
 
-.celsius-toggle .active{
+.celsius-toggle .active {
     font-size: 40px;
     color: black;
 }
 
-.header{
+.header {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -116,8 +116,108 @@
 }
 
 
-.conteiner{
+.conteiner {
     width: 100%;
     display: flex;
     gap: 28px;
+    padding-top: 40px;
 }
+
+.weather-place {
+    background-color: white;
+    box-shadow: 10px 10px 4px 0px #00000033;
+    width: 440px;
+    height: 400px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.city {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    margin-bottom: 50px;
+}
+
+
+.time {
+    font-size: 89px;
+    font-weight: 700;
+    font-family: 'Poppins';
+
+}
+
+.day {
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+
+
+.weather-info {
+    width: 780px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 10px 10px 4px 0px #00000033;
+    border-radius: 30px;
+    flex: 1;
+
+}
+
+.weather-info h1 {
+    font-size: 66px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    background: linear-gradient(80.34deg, #292929 -2.93%, rgba(255, 255, 255, 0) 212.44%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left:40px;
+    padding-top: 15px;
+}
+
+.feels-like{
+    color: #292929;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    padding-left:40px;
+}
+
+.feels-like span{
+    font-size: 20px;
+    padding-left: 8px;
+
+}
+
+.sunrise,.sunset{
+    padding-left: 35px;
+    padding-top: 30px;
+    width: 155px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* .time-info img{
+    width: 48px;
+    height: 48px;
+} */
+
+.sunrise,.sunset p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+
+.sunrise,.sunset p span{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
