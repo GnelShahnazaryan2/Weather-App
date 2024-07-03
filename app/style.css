@@ -136,7 +136,7 @@ body {
 }
 
 
-.city {
+#city {
     font-size: 36px;
     font-weight: 700;
     font-family: 'Poppins';
@@ -144,80 +144,107 @@ body {
 }
 
 
-.time {
+#time {
     font-size: 89px;
     font-weight: 700;
     font-family: 'Poppins';
 
 }
 
-.day {
+#day {
     font-size: 18px;
     font-family: 'Poppins';
 }
 
 
 
-.weather-info {
-    width: 780px;
-    height: 400px;
-    background-color: white;
-    box-shadow: 10px 10px 4px 0px #00000033;
+.block {
+    background: #fff;
     border-radius: 30px;
-    flex: 1;
-
 }
 
-.weather-info h1 {
+.main-block {
+    padding: 32px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.main-block h2 {
     font-size: 66px;
     font-weight: 700;
-    font-family: 'Poppins';
     background: linear-gradient(80.34deg, #292929 -2.93%, rgba(255, 255, 255, 0) 212.44%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-left:40px;
-    padding-top: 15px;
 }
 
-.feels-like{
-    color: #292929;
-    font-size: 18px;
+.main-block .feels-like {
     font-weight: 600;
-    font-family: 'Poppins';
-    padding-left:40px;
+    font-size: 17px;
+    margin-bottom: 24px;
 }
 
-.feels-like span{
-    font-size: 20px;
-    padding-left: 8px;
-
+.main-block .feels-like span {
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 12px;
 }
 
-.sunrise,.sunset{
-    padding-left: 35px;
-    padding-top: 30px;
-    width: 155px;
+.time-info {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-top: 18px;
 }
 
-/* .time-info img{
-    width: 48px;
-    height: 48px;
-} */
+.main-image {
+    width: 200px;
+    height: 200px;
+}
 
-.sunrise,.sunset p{
+.main-image-text {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.main-image-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.general-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.general-info>div {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.general-info>div .icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.general-info>div .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.general-info .amount {
     font-size: 20px;
     font-weight: 600;
-    font-family: 'Poppins';
 }
-
-
-.sunrise,.sunset p span{
-    font-size: 16px;
-    font-weight: 500;
-    font-family: 'Poppins';
-}
-

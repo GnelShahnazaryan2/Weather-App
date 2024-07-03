@@ -8,8 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -37,28 +39,90 @@
         </div>
         <div class="conteiner">
             <div class="weather-place">
-                    <h3 class="city">Yerevan</h3>
-                    <h1 class="time">09:03</h1>
-                    <p class="day">Thursday,31 Aug</p>
+                <h3 id="city">Yerevan</h3>
+                <h1 id="time">09:03</h1>
+                <p id="day">Thursday,31 Aug</p>
             </div>
 
-            <div class="weather-info">
-                <h1>24°C</h1>
-                <p class="feels-like">Feels like:  <span>22°C</span></p>
-                <div class="sunrise">
-                    <img src="images/sunrise-white.png" alt="">
-                    <p>Sunrise <span>6:37AM</span></p>
+            <div class="main-block block">
+                <div>
+                    <h2>24°C</h2>
+                    <p class="feels-like">Feels like <span>22°C</span></p>
+                    <div class="time-info">
+                        <div class="sun-icon">
+                            <img src="./images/sunrise-white.png" alt="">
+                        </div>
+                        <div>
+                            <p class="title">Sunrise</p>
+                            <p>06:37 AM</p>
+                        </div>
+                    </div>
+                    <div class="time-info">
+                        <div class="sun-icon">
+                            <img src="./images/sunset-white.png" alt="">
+                        </div>
+                        <div>
+                            <p class="title">Sunset</p>
+                            <p>06:37 AM</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sunset">
-                    <img src="images/sunset-white.png" alt="">
-                    <p>Sunset <span>20:37AM</span></p>
+                <div class="main-image-block">
+                    <img class="main-image" src="./images/sunny.png" alt="">
+                    <p class="main-image-text">Sunny</p>
+                </div>
+
+                <div class="general-info">
+                    <div>
+                        <div class="icon">
+                            <img src="./images/humidity.svg" alt="">
+                        </div>
+                        <div class="amount">41%</div>
+                        <div class="text">Humidity</div>
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <img src="./images/wind.svg" alt="">
+                        </div>
+                        <div class="amount">2km/h</div>
+                        <div class="text">Wind</div>
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <img src="./images/pressure-white.svg" alt="">
+                        </div>
+                        <div class="amount">997hPa</div>
+                        <div class="text">Pressure</div>
+                    </div>
+                    <div>
+                        <div class="icon">
+                            <img src="./images/uv-white.svg" alt="">
+                        </div>
+                        <div class="amount">8</div>
+                        <div class="text">UV</div>
+                    </div>
                 </div>
             </div>
-            
-            
+        </div>
+
+        <div class="container">
+            <div class="forecast-block block">
+                <h3>5 Days Forecast</h3>
+                <div class="row">
+                    <img src="" alt="">
+                    <p class="amount">20°C</p>
+                    <p class="text">Friday,1 Sep</p>
+                </div>
+            </div>
         </div>
     </div>
+    </div>
 
+   
+
+    <script type="module" src="script.js"></script>
 </body>
+
+
 
 </html>
