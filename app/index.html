@@ -46,8 +46,8 @@
 
             <div class="main-block block">
                 <div>
-                    <h2>24°C</h2>
-                    <p class="feels-like">Feels like <span>22°C</span></p>
+                    <h2 id="day-weather"></h2>
+                    <p class="feels-like">Feels like <span id="feelsLike"></span></p>
                     <div class="time-info">
                         <div class="sun-icon">
                             <img src="./images/sunrise-white.png" alt="">
@@ -69,33 +69,33 @@
                 </div>
                 <div class="main-image-block">
                     <img class="main-image" src="./images/sunny.png" alt="">
-                    <p class="main-image-text">Sunny</p>
+                    <p class="main-image-text" id="conditionText">Sunny</p>
                 </div>
 
                 <div class="general-info">
                     <div>
-                        <div class="icon">
+                        <div class="icon" id="humidity">
                             <img src="./images/humidity.svg" alt="">
                         </div>
                         <div class="amount">41%</div>
                         <div class="text">Humidity</div>
                     </div>
                     <div>
-                        <div class="icon">
+                        <div class="icon" id="wind">
                             <img src="./images/wind.svg" alt="">
                         </div>
                         <div class="amount">2km/h</div>
                         <div class="text">Wind</div>
                     </div>
                     <div>
-                        <div class="icon">
+                        <div class="icon" id="pressure">
                             <img src="./images/pressure-white.svg" alt="">
                         </div>
                         <div class="amount">997hPa</div>
                         <div class="text">Pressure</div>
                     </div>
                     <div>
-                        <div class="icon">
+                        <div class="icon" id="uv">
                             <img src="./images/uv-white.svg" alt="">
                         </div>
                         <div class="amount">8</div>
