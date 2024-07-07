@@ -124,7 +124,6 @@ body {
 }
 
 .weather-place {
-    background-color: white;
     box-shadow: 10px 10px 4px 0px #00000033;
     width: 440px;
     height: 400px;
@@ -250,12 +249,159 @@ body {
 }
 
 
-.main.dark{
-    background...
-    color: 
+.main .container:last-child {
+    margin-top: 30px;
 }
 
-.main.dark .block{
-    background-color: ;
-    
+.forecast-block {
+    padding: 32px;
 }
+
+.forecast-block h3 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
+.row img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.row .amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.row .text {
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.hourly-block {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.hourly-block h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hourly-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    max-width: 140px;
+    background: linear-gradient(170.72deg, #FFAF57 -12.41%, rgba(246, 250, 217, 0) 163.32%);
+    padding: 18px;
+    border-radius: 30px;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.hourly-info.night {
+    background: linear-gradient(173.7deg, #928DAC -15.92%, rgba(96, 119, 174, 0) 109.1%);
+}
+
+.hourly-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.hourly-info-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.main.dark {
+    background: linear-gradient(110.05deg, #383838 0%, rgba(22, 22, 22, 0.5) 71.82%);
+    color: #fff;
+}
+
+.main.dark .block {
+    background: #292929;
+}
+
+.main.dark .search-bar {
+    background: #444444;
+    border: none;
+}
+
+.main.dark .search-bar input {
+    background: #444444;
+    color: #fff;
+}
+
+.main.dark .toggle-wrapper {
+    background-color: #D9D9D9;
+}
+
+.main.dark .toggle-wrapper .toggle-inner {
+    background: #000;
+    left: unset;
+    right: 5px;
+}
+
+.main.dark .theme-toggle .dark {
+    display: inline;
+}
+
+.main.dark .theme-toggle .light {
+    display: none;
+}
+
+.main.dark .main-block h2 {
+    background: linear-gradient(84.4deg, #FFFFFF -16.56%, rgba(255, 255, 255, 0) 118.43%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main.dark .icon img {
+    filter: brightness(0) invert(1);
+}
+
+.main.dark .hourly-info {
+    background: #373636;
+}
+
+.main.dark .celsius-toggle {
+    background: #6C6C6C;
+}
+
+.main.dark .celsius-toggle button {
+    color: #AEAEC2;
+}
+
+.main.dark .celsius-toggle .active {
+    color: #fff;
+}
+
+
+.hourly-info.night {
+    background: linear-gradient(173.7deg, #928DAC -15.92%, rgba(96, 119, 174, 0) 109.1%);
+    }

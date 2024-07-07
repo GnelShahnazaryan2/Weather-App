@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . Weather-App"
   },
   "author": "Gnel",
   "license": "ISC",
@@ -11,6 +12,10 @@
   "dependencies": {
     "data-fns": "^1.1.0",
     "date-fns": "^3.6.0",
-    "electron": "^31.1.0"
+    "electron": "^31.1.0",
+    "electron-packager": "^17.1.2"
+  },
+  "build":{
+    "appId":"com.weather.electron"
   }
 }
